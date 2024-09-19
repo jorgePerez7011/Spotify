@@ -30,6 +30,29 @@ const { title } = Astro.props;
 				</menu>
 			</div>
 		</header>
+
+		<div class="cont  space-between">
+			<div class="centro "> 
+				<h1>
+					Exprime al máximo <br>
+					 tu música con Premium <br>
+					 Individual.
+				</h1>
+				<h4>
+					Disfruta de música sin interrupciones con Spotify Premium. <br>
+					<br>
+                    Desde solo 16.900 COP. Cancela cuando quieras.
+				</h4>
+				<button class="boton1">
+					Conseguir Premium Individual
+				  </button>
+				  <button class="boton2">
+					ver todos los planes
+				  </button>
+			</div>
+		</div>
+		
+
 	</body>
 </html>
 
@@ -40,9 +63,53 @@ const { title } = Astro.props;
 	margin: 0;
     }
 
+	.centro{
+		color: aliceblue;
+		align-items: center;
+		list-style-type: none;
+		margin-left: 160px;
+		margin-top: 70px;
+		height: 300px;
+		font-family: arial;
+	}
+	.boton1 {
+		background-color: rgb(245, 197, 192);
+		color: black;
+        border-radius: 30px;
+        padding: 15px 30px; 
+        font-size: 16px; 
+        font-weight: bold; 
+        cursor: pointer; 
+        display: inline-block; 
+        text-align: center; 
+    }
+
+	.boton2{
+		background-color: rgb(0, 0, 0);
+		color: white;
+        border-radius: 30px;
+        padding: 15px 30px; 
+        font-size: 16px; 
+        font-weight: bold; 
+        cursor: pointer; 
+        display: inline-block; 
+        text-align: center; 
+	}
+
+	.cont {
+		background-image: url(C:\Users\mamit\OneDrive\Escritorio\desarrollo2.0\Spotify\Spotify\Captura de pantalla 2024-09-08 104928.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 650px;
+		background-color: aqua;
+		display: flex;
+		padding: 2px;
+		text-shadow: rgba(0, 0, 0, 0.65) 0px 4px 14px;
+	}
+
 	header {
-		background-color: rgb(15, 15, 15);
-		height: 42px;
+		background-color: rgb(9, 9, 9);
+		height: 80px;
 		color: rgb(251, 245, 245);
 		display: flex;
 	}
@@ -51,7 +118,7 @@ const { title } = Astro.props;
 		display: flex;
 		gap: 8px;
 	}
-
+	
 	li {
 		
 		list-style-type: none;
@@ -73,7 +140,7 @@ const { title } = Astro.props;
 	
 	#logo-spotify {
 		fill: aliceblue;
-		width: 80px;
+		width: 150px;
 	}
 
 	.container {
